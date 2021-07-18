@@ -1,0 +1,8 @@
+cx/pach/Buzz/util/Page.java
+ cx.pach.Buzz.util.Page
+cx/pach/Buzz/commands/Course.java
+ cx.pach.Buzz.commands.Course
+cx/pach/Buzz/core/Main.java
+ cx.pach.Buzz.core.Main
+cx/pach/Buzz/commands/CourseTest.java
+ cx.pach.Buzz.commands.CourseTest
