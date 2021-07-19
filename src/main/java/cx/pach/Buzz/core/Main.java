@@ -7,11 +7,14 @@ import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 
 import javax.security.auth.login.LoginException;
+import java.util.logging.Level;
 
 public class Main {
     public static void main(String[] args) throws LoginException, InterruptedException {
 
-        JDA jda = JDABuilder.createDefault("ODY2MzczNTU4OTcxNTMxMjg1.YPRnQA.z5yOARngSup9hPn-cmdbplKllCM")
+        java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
+
+        JDA jda = JDABuilder.createDefault("")
                 .addEventListeners(new Course(), new CourseTest())
                 .build();
         jda.getPresence().setPresence(Activity.watching("your GPA"), false);
