@@ -14,7 +14,7 @@ public class Main {
 
         java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
 
-        JDA jda = JDABuilder.createDefault("")
+        JDA jda = JDABuilder.createDefault(System.getenv("TOKEN"))
                 .addEventListeners(new Course(), new CourseTest())
                 .build();
         jda.getPresence().setPresence(Activity.watching("your GPA"), false);
