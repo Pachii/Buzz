@@ -27,6 +27,4 @@ test {
 }
 
 task stage() {
-    dependsOn clean, war
 }
-war.mustRunAfter clean
