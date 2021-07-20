@@ -19,6 +19,7 @@ public class Main {
                 .build();
         jda.getPresence().setPresence(Activity.watching("your GPA"), false);
         jda.awaitReady();
+        System.out.println("Buzz is online!");
 
     }
 }
