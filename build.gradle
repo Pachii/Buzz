@@ -25,3 +25,8 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+task stage() {
+    dependsOn clean, war
+}
+war.mustRunAfter clean
