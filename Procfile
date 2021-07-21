@@ -1,1 +1,1 @@
-Worker: java src/main/java/cx/pach/Buzz/core/Main.java
+worker: java -cp . src/main/java/cx/pach/Buzz/core/Main.java
