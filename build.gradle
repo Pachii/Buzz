@@ -24,6 +24,4 @@ test {
     useJUnitPlatform()
 }
 
-tasks.create("stage") {
-    dependsOn("installDist")
-}
+task stage(dependsOn: ['clean', 'installDist'])
