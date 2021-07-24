@@ -30,5 +30,5 @@ test {
     useJUnitPlatform()
 }
 
-task stage(dependsOn: 'application') {
+task stage() {
 }
