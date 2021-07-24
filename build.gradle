@@ -1,7 +1,6 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.5.3'
-    id "com.github.johnrengelman.shadow" version "7.0.0"
+    id 'application'
 }
 
 group 'cx.pach'
@@ -15,7 +14,9 @@ repositories {
     }
 }
 
-
+application {
+    mainClass = 'cx.pach.Buzz.core.Main'
+}
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
@@ -29,11 +30,5 @@ test {
     useJUnitPlatform()
 }
 
-apply plugin: 'com.github.johnrengelman.shadow'
-apply plugin: 'java'
-
-task stage(dependsOn: 'shadowJar') {
-    shadowJar {
-        mergeServiceFiles()
-    }
+task stage(dependsOn: 'application') {
 }
