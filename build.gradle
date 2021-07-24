@@ -33,4 +33,7 @@ apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: 'java'
 
 task stage(dependsOn: 'shadowJar') {
+    shadowJar {
+        mergeServiceFiles()
+    }
 }
