@@ -18,10 +18,9 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     implementation("net.dv8tion:JDA:4.3.0_297")
     implementation('net.sourceforge.htmlunit:htmlunit:2.51.0')
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.32'
 }
 
 test {
     useJUnitPlatform()
 }
-
-task stage(dependsOn: [])
