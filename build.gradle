@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id 'application'
 }
 
 group 'cx.pach'
@@ -12,10 +11,6 @@ repositories {
         name 'm2-dv8tion'
         url 'https://m2.dv8tion.net/releases'
     }
-}
-
-application {
-    mainClass = 'cx.pach.Buzz.core.Main'
 }
 
 dependencies {
